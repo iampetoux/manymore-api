@@ -12,8 +12,5 @@ class ApiWidgetController extends AbstractController
     #[Route(path: "current", name: "current", methods: ["GET"])]
     public function getByUser(): JsonResponse
     {
-        $user = $this->getUser()->getWidgets();
-
-
     }
 }
